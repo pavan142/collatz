@@ -1,0 +1,29 @@
+{
+  "name": "@pavan142/collatz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "name": "Pavan Tirumani",
+    "url": "https://github.com/pavan142"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "build-dev": "webpack --config webpack.config.dev.js",
+    "tsbuild": "tsc",
+    "tsbuild-dev": "tsc -p tsconfig.dev.json",
+    "deploy-local": "http-server"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "html2canvas": "^1.0.0-rc.5",
+    "http-server": "^0.12.3",
+    "ts-loader": "^7.0.4",
+    "typescript": "^3.9.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

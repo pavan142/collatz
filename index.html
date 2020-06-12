@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <style>
+      html,body {
+        height: 100%;
+        margin: 0px;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .grid-container {
+        width: 95vw;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(25, auto);
+      }
+
+      .grid500 {
+        grid-gap: 0px;
+      }
+      
+      .grid-item {
+        margin: 0px;
+        border-radius: 50%;
+        text-align: center;
+        border: 1px solid #000000;
+        background-color: skyblue;
+      }
+
+      .marked {
+        background-color: antiquewhite;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class = "grid-container"></div>
+    <p class = "stats"></p>
+  </body>
+  <script type = "module" src = "./dist/bundle.js"></script>
+</html>
